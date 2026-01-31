@@ -1,0 +1,204 @@
+*{ /*Universal Padding*/
+    box-sizing: border-box;
+}
+
+body{ /*element or type selector*/
+    background-color: rgb(203, 179, 203);
+    /*functionl value*/
+    display: flex;
+    flex-direction: column;
+    gap : 1rem;
+
+}
+
+header{ /*elemwnt or type selector*/
+    /*left ko properties = right ko values*/
+    display: flex;
+    align-items: center ;
+    width: 100% ; /*relative value */
+    height: 4.5rem; /*"16px = 1rem"*/
+    /*height: 200px "fixed value"*/
+    background-color: whitesmoke;
+    justify-content: space-around;
+
+    border: 1px solid black;/* CSS short hand operator*/
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap :1rem;
+}
+
+section{
+    display: flex;
+    width: 100% ;
+    height: 40rem;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+aside{
+    display: flex;
+    width: 100% ;
+    height: 40rem;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+ul{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav ul li:first-child{ /*Pseudo-class*/
+    font-weight: bold;
+}
+
+ol{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: lower-roman;
+}
+
+.logo{
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: blueviolet;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+
+    justify-content: center; /*horizontal center*/
+    align-items: center; /*vertical center*/
+}
+
+.lists-container {
+
+    display: flex;
+    flex-direction: column; 
+    padding-left: 1rem; 
+
+}
+
+ol{
+    font-size: 1.5rem;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dt,dd {
+    padding: 0;
+    margin: 0;
+    display: inline;
+    font-size: 1.5rem;
+}
+
+dd::after{ /*pseudo element*/
+    content: "\A";
+    white-space: pre;
+}
+
+.list-section h2, .description-section h2, .table-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+}
+
+th {
+    border: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid black;
+    padding: 1rem;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    width: 100%;
+    gap: 1rem;
+}
+
+form input{
+    width: 80%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    padding-left: 1rem;
+    font-size: 1rem;    
+}
+
+form input::placeholder{
+    font-size: 1rem;
+}
+
+.Submit{
+    background: blueviolet ;
+    color: white;
+    cursor: pointer;
+    width: 30%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+.Submit:hover{
+    background: rgb(160, 112, 210);
+}
+
+.box{
+    font-size: 1rem;
+    border: 1px solid black;
+    width: 85% ;
+    height: 30rem;
+    padding-left: 4rem;
+    padding-top: 4rem;
+
+
+}
+
+article{
+    display: flex;
+    gap: 5rem;
+    padding-left: 2rem;
+    padding-top: 5rem;
+}
+
+.mb-3,.mb-4{
+    font-size: 1.5rem;
+    width: 85%;
+
+}
+
+.mb-3{
+    font-weight: bold;
+}
+ 
+footer{
+    padding-left: 43rem;
+}
